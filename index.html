@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200;400&family=Signika+Negative&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5d3af1a1ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <form id="search-form">
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Enter the city..."
+          />
+          <input class="search-button" type="submit" value="Search" />
+        </form>
+        <div class="containerCurrentButton">
+          <button class="location-button">Current</button>
+        </div>
+      </header>
+      <main>
+        <div class="container-city-emoji">
+          <h1 class="city">Kyiv</h1>
+          <div class="container-emoji-description">
+            <i class="fa-regular fa-sun main-emoji"></i>
+            <div class="emoji-description">Sunny</div>
+          </div>
+        </div>
+        <div class="container-temperature">
+          <div>
+            <div class="container-temperature-units">
+              <span class="temperature">24</span>
+              <span class="unit">°C</span>
+            </div>
+            <div class="temperature-feeling">Feels like 22°C</div>
+          </div>
+        </div>
+        <div class="details">
+          <ul>
+            <li class="time">Tuesday 21:32</li>
+            <li class="humidity">Humidity: 66%</li>
+            <li class="wind">Wind: 4km/h</li>
+          </ul>
+        </div>
+      </main>
+      <footer>
+        <article class="card">
+          <p><strong> Mon </strong></p>
+          <i class="fa-regular fa-sun"></i>
+          <p>21°</p>
+        </article>
+        <article class="card">
+          <p><strong> Tue </strong></p>
+          <i class="fa-regular fa-sun"></i>
+          <p>21°</p>
+        </article>
+        <article class="card">
+          <p>
+            <strong> Wen </strong>
+          </p>
+          <i class="fa-regular fa-sun"></i>
+          <p>21°</p>
+        </article>
+        <article class="card">
+          <p><strong> Thu </strong></p>
+          <i class="fa-regular fa-sun"></i>
+          <p>21°</p>
+        </article>
+        <article class="card child">
+          <p><strong> Fri </strong></p>
+          <i class="fa-regular fa-sun"></i>
+          <p>21°</p>
+        </article>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

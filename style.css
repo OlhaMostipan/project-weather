@@ -1,0 +1,149 @@
+form {
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 30px;
+}
+a {
+  text-decoration: none;
+  color:#016fff;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 3px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+strong {
+  font-size: 24px;
+  color:#016fff;
+}
+.main-container {
+  border: 1px solid #000000;
+  padding: 20px 20px;
+  max-width: 700px;
+  margin-top: 20px;
+  margin-left: 15px;
+  font-family: 'Kantumruy Pro', sans-serif;
+}
+.search-input {
+  width: 70%;
+  font-size: 24px;
+  border-radius: 4px;
+  border: 1px solid #016fff;
+  box-shadow: 3px 5px 5px rgba( 0, 0, 0, 0.15);
+  padding: 7px;
+  font-family: 'Kantumruy Pro', sans-serif;
+}
+.search-button {
+  font-size: 24px;
+  background-color: #016fff;
+  color: #ffffff;
+  border: 1px solid #016fff;
+  border-radius: 4px;
+  box-shadow: 3px 5px 5px rgba( 0, 0, 0, 0.15);
+  padding: 7px 30px;
+  font-family: 'Kantumruy Pro', sans-serif;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  width: 150px;
+}
+.search-button:hover {
+  background-color: #ffffff;
+  color: #016fff;
+}
+.containerCurrentButton {
+  display: flex;
+  justify-content: flex-end;
+}
+.location-button {
+  margin-top: 10px;
+  width: 150px;
+  font-size: 24px;
+  background-color: #66B14A;
+  color: #ffffff;
+  border: 1px solid #66B14A;
+  border-radius: 4px;
+  box-shadow: 3px 5px 5px rgba( 0, 0, 0, 0.15);
+  padding: 7px 30px;
+  font-family: 'Kantumruy Pro', sans-serif;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.location-button:hover {
+  background-color: #ffffff;
+  color: #66B14A;
+}
+.container-city-emoji {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.city {
+  font-size: 46px;
+  margin: 0 0 10px 0;
+  font-family: 'Signika Negative', sans-serif;
+}
+.container-emoji-description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main-emoji {
+  font-size: 60px;
+}
+.emoji-description {
+  margin-top: 15px;
+  color: #757575;
+}
+.container-temperature {
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+}
+.container-temperature-units {
+  display: flex;
+}
+.temperature {
+  font-size: 120px;
+  font-weight: 600;
+  margin: 0;
+}
+.unit {
+  margin-top: 25px;
+}
+.temperature-feeling {
+  margin: 0;
+  color: #757575;
+}
+.details {
+  display: flex;
+  align-items: flex-end;
+  color: #757575;
+}
+.time{
+  color:#000000;
+}
+
+.card {
+  border: 1px solid #000000;
+  border-radius: 4px;
+  flex: 1;
+  margin-right: 15px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 3px 5px 5px rgba( 0, 0, 0, 0.15);
+}
+.child {
+  margin: 0;
+}
