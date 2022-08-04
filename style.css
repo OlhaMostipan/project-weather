@@ -147,3 +147,6 @@ strong {
 .child {
   margin: 0;
 }
+.gitHubLink {
+  margin-left: 15px;
+}
