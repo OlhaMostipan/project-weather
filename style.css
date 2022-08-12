@@ -61,28 +61,6 @@ strong {
   background-color: #ffffff;
   color: #016fff;
 }
-.containerCurrentButton {
-  display: flex;
-  justify-content: flex-end;
-}
-.location-button {
-  margin-top: 10px;
-  width: 150px;
-  font-size: 24px;
-  background-color: #66B14A;
-  color: #ffffff;
-  border: 1px solid #66B14A;
-  border-radius: 4px;
-  box-shadow: 3px 5px 5px rgba( 0, 0, 0, 0.15);
-  padding: 7px 30px;
-  font-family: 'Kantumruy Pro', sans-serif;
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
-}
-.location-button:hover {
-  background-color: #ffffff;
-  color: #66B14A;
-}
 .container-city-emoji {
   display: flex;
   flex-direction: column;
@@ -100,7 +78,8 @@ strong {
   text-align: center;
 }
 .main-emoji {
-  font-size: 60px;
+  width: 100px;
+  height: 100px;
 }
 .emoji-description {
   margin-top: 15px;
