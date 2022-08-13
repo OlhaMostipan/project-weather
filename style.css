@@ -99,7 +99,7 @@ strong {
   font-weight: 600;
   margin: 0;
   min-height: 141.5px;
-  min-width: 134.047px;
+  min-width: 138px;
 }
 .units {
   margin-top: 25px;
@@ -111,14 +111,26 @@ strong {
 .temperature-feeling {
   margin: 0;
   color: #757575;
+  min-height:18.5px; 
+  min-width: 186.781px;
 }
 .details {
   display: flex;
   align-items: flex-end;
   color: #757575;
 }
-.time{
+.time {
   color:#000000;
+  min-height:18.5px; 
+  min-width: 120.359px;
+}
+.humidity {
+  min-height:18.5px;
+  min-width: 120.359px;
+}
+.wind {
+  min-height:18.5px;
+  min-width: 120.359px;
 }
 
 .card {
