@@ -94,3 +94,33 @@ let fahrenheit = document.querySelector("#fahrenheit-link");
 fahrenheit.addEventListener("click", changeToFahrenheit);
 
 initialSearch();
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class = forecastContainer>`;
+
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <article class="card">
+      <p><strong> ${day} </strong></p>
+      <i class="fa-regular fa-sun"></i>
+      <p>
+      <span class="max-temperature">
+      21°
+      </span>
+      <span class="min-temperature">
+      12°
+      </span>
+      </p>
+      </article>
+      `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();

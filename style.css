@@ -132,7 +132,13 @@ strong {
   min-height:18.5px;
   min-width: 120.359px;
 }
+.forecastContainer {
+  display: flex;
+}
+#forecast {
+  width: 100%;
 
+}
 .card {
   border: 1px solid #000000;
   border-radius: 4px;
@@ -142,8 +148,14 @@ strong {
   font-size: 18px;
   box-shadow: 3px 5px 5px rgba( 0, 0, 0, 0.15);
 }
+.card:last-child {
+  margin-right: 0;
+}
 .child {
   margin: 0;
+}
+.min-temperature {
+  opacity: 0.5;
 }
 .gitHubLink {
   margin-left: 15px;
