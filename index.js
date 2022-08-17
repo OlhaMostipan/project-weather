@@ -43,7 +43,7 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 
-  getForecast (response.data.coord);
+  getForecast(response.data.coord);
 }
 function search(event) {
   event.preventDefault();
@@ -105,30 +105,41 @@ fahrenheit.addEventListener("click", changeToFahrenheit);
 
 initialSearch();
 
+function displayDayName(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
+}
+
 function displayForecast(response) {
-  console.log(response.data.daily)
+  let forecast = response.data.daily;
+
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class = forecastContainer>`;
 
-  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 5) {
+      forecastHTML =
+        forecastHTML +
+        `
       <article class="card">
-      <p><strong> ${day} </strong></p>
-      <i class="fa-regular fa-sun"></i>
+      <p><strong> ${displayDayName(forecastDay.dt)} </strong></p>
+      <img class="forecast-emoji" src="http://openweathermap.org/img/wn/${
+        forecastDay.weather[0].icon
+      }@2x.png">
       <p>
       <span class="max-temperature">
-      21°
+      ${Math.round(forecastDay.temp.max)}°
       </span>
       <span class="min-temperature">
-      12°
+      ${Math.round(forecastDay.temp.min)}°
       </span>
       </p>
       </article>
       `;
+    }
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
